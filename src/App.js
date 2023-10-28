@@ -46,7 +46,7 @@ function App() {
       <Modal
         show={show}
         onHide={handleClose}
-        className="bg-modal-bg absolute w-[100vw] h-[100vh] overflow-scroll"
+        className="bg-modal-bg absolute top-0 bottom-0 right-0 left-0 overflow-y-scroll border-none"
       >
         <div className="h-screen flex flex-col justify-center items-center ">
           <div className="bg-[#fff] p-3 text-center rounded-md">
@@ -79,7 +79,7 @@ function App() {
       <Modal
         show={showBarCode}
         onHide={handleClose}
-        className="bg-[#000] absolute w-[100vw] h-[100vh] overflow-scroll text-[#fff]"
+        className="bg-[#000] absolute top-0 bottom-0 right-0 left-0 overflow-y-scroll text-[#fff]"
       >
         <div className="h-screen flex flex-col items-center justify-between">
           <Modal.Header closeButton className="w-full">
@@ -110,7 +110,7 @@ function App() {
       <Modal
         show={showReport}
         onHide={handleClose}
-        className="bg-[#000] absolute w-[100vw] h-[100vh] overflow-scroll text-[#fff]"
+        className="bg-[#000] absolute top-0 bottom-0 right-0 left-0 overflow-y-scroll text-[#fff]"
       >
         <div className="flex justify-end p-4">
           <button className="" onClick={() => setShowReport(false)}>
