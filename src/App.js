@@ -46,7 +46,7 @@ function App() {
       <Modal
         show={show}
         onHide={handleClose}
-        className="bg-modal-bg absolute start-0 top-0 right-0 bottom-0"
+        className="bg-modal-bg absolute w-[100vw] h-[100vh] overflow-scroll"
       >
         <div className="h-screen flex flex-col justify-center items-center ">
           <div className="bg-[#fff] p-3 text-center rounded-md">
@@ -79,7 +79,7 @@ function App() {
       <Modal
         show={showBarCode}
         onHide={handleClose}
-        className="bg-[#000] absolute start-0 top-0 right-0 bottom-0 text-[#fff]"
+        className="bg-[#000] absolute w-[100vw] h-[100vh] overflow-scroll text-[#fff]"
       >
         <div className="h-screen flex flex-col items-center justify-between">
           <Modal.Header closeButton className="w-full">
@@ -97,11 +97,11 @@ function App() {
               />
             </div>
           </Modal.Header>
-          <Modal.Body className="w-2/3 mx-auto grow mt-20">
+          <Modal.Body className="w-2/3 mx-auto grow mt-20 mb-5">
             <img src={BarCodeIcon} alt="Barcode" />
           </Modal.Body>
-          <Modal.Footer className="flex flex-col text-center mb-16 w-1/2">
-            <p className="text-[10.37px] font-medium">
+          <Modal.Footer className="flex flex-col text-center w-1/2">
+            <p className="text-[10.37px] font-medium my-10">
               Let Store Owners Scan Your Barcode to get your receipts
             </p>
           </Modal.Footer>
@@ -110,7 +110,7 @@ function App() {
       <Modal
         show={showReport}
         onHide={handleClose}
-        className="bg-[#000] absolute start-0 top-0 right-0 bottom-0 text-[#fff]"
+        className="bg-[#000] absolute w-[100vw] h-[100vh] overflow-scroll text-[#fff]"
       >
         <div className="flex justify-end p-4">
           <button className="" onClick={() => setShowReport(false)}>
@@ -119,7 +119,7 @@ function App() {
         </div>
         <div className="h-screen flex flex-col items-center justify-between">
           <Modal.Body className="w-5/6 mt-24">
-            <img src={ReportImg} alt="Barcode" />
+            <img src={ReportImg} alt="Barcode" className="mb-16" />
           </Modal.Body>
         </div>
       </Modal>

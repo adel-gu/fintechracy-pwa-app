@@ -34,8 +34,10 @@ const RecieptItem = ({ price, setShowReport, id }) => {
           <p className="text-[0.564rem] text-white-gray-3">7 items</p>
         </div>
         <button
-          className={`bg-primary-op ${
-            isExpand && 'bg-accent text-[#fff] px-4 rounded-md text-[10.33px]'
+          className={`${
+            isExpand
+              ? 'bg-accent text-[#fff] px-4 rounded-md text-[10.33px]'
+              : 'bg-primary-op'
           } rounded-sm p-0.5 py-1`}
           onClick={() => setIsExpand((prev) => !prev)}
         >
